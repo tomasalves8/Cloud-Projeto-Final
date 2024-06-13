@@ -1,7 +1,7 @@
 <?php
 $db_server_ip = getenv('DB_SERVER_IP');
 $db_server_password = getenv('DB_SERVER_PASSWORD');
-$conn = new mysqli($db_server_ip, "root", $db_server_password);
+$conn = new mysqli($db_server_ip, "db_user", $db_server_password);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
